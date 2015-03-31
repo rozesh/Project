@@ -1,62 +1,54 @@
-<?php
-/* Set e-mail recipient */
-$myemail = "rozeshs@gmail.com";
+<?php 
 
-/* Check all form inputs using check_input function */
-$name = check_input($_POST['name'], "Enter your name");
-$subject = check_input($_POST['subject'], "Enter a subject");
-$email = check_input($_POST['email']);
-$message = check_input($_POST['message'], "Write your message");
+$errormsg="";
+$errorsub="";
+$errorname="";
+$erroremail="";
 
-/* If e-mail is not valid show error message */
-if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
-{
-show_error("E-mail address not valid");
+$finalmsg="";
+
+if(isset($_POST["submitmyform"])){
+
+if(empty($_POST["name"])){
+  $errorname="Sorry Name Field Is Required";
 }
-/* Let's prepare the message for the e-mail */
-$message = "
-
-Name: $name
-E-mail: $email
-Subject: $subject
-
-Message:
-$message
-
-";
-
-mail($myemail, $subject, $message);
-
-/* Redirect visitor to the thank you page */
-header('Location: index.php?action=contact');
-exit();
-
-/* Functions we used */
-function check_input($data, $problem='')
-{
-$data = trim($data);
-$data = stripslashes($data);
-$data = htmlspecialchars($data);
-if ($problem && strlen($data) == 0)
-{
-show_error($problem);
+else{
+  $name=$_POST["name"];
 }
-return $data;
+if(empty($_POST["subject"])){
+  $errorsub="Sorry subject Field Is Required";
+}
+else{
+  $subject=$_POST["subject"];
+}
+if(empty($_POST["message"])){
+  $errormsg="Sorry message Field Is Required";
+}
+else{
+  $message=$_POST["message"];
+}
+if(empty($_POST["email"])){
+  $erroremail="Sorry email Field Is Required";
+
+}
+else{
+  $message=$_POST["message"];
+}
+if(!empty($_POST["name"] && $_POST["subject"] && $_POST["message"] && $_POST["email"])){
+ $finalmsg='<script>alert("Thank You For Sending Us a Email, will get back to you within 48 hours.");</script>';
+   $email_to = "rozeshs@gmail.com";
+ 
+    $subject = "portfolio message";
+    $headers = 'From: '.$_POST["email"]."\r\n".
+ 
+'Reply-To: '.$_POST["email"]."\r\n" .
+ 
+'X-Mailer: PHP/' . phpversion();
+ 
+@mail($email_to, $_POST["subject"], $_POST["message"], $headers); 
 }
 
-function show_error($myError)
-{
-?>
-<html>
-<body>
-
-<p>Please correct the following error:</p>
-<strong><?php echo $myError; ?></strong>
-<p>Hit the back button and try again</p>
-
-</body>
-</html>
-<?php
-exit();
 }
+
+
 ?>

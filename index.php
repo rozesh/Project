@@ -89,11 +89,11 @@
    <div id="social">
       <div class="row social-container">
             <ul class="social">
-               <li><a href="https://www.facebook.com/Roxzz"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="https://twitter.com/Roxz12"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="https://plus.google.com/u/0/111485116006919363712/posts"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="https://np.linkedin.com/pub/rojesh-shrestha/a8/807/6a9/en"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://github.com/rozesh"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://www.facebook.com/Roxzz" target="_blank"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://twitter.com/Roxz12" target="_blank"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://plus.google.com/u/0/111485116006919363712/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="https://np.linkedin.com/pub/rojesh-shrestha/a8/807/6a9/en" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/rozesh" target="_blank"><i class="fa fa-github"></i></a></li>
             </ul>
       </div>
 
@@ -402,7 +402,7 @@
 		      </div>
 
             <div class="link-box">
-               <a href="http://check2.rozesh.com.np" class="button">Live Demo</a>
+               <a href="http://check2.rozesh.com.np" target="_blank" class="button">Live Demo</a>
 		         <a class="popup-modal-dismiss button btn-close">Close</a>
             </div>
 
@@ -420,7 +420,7 @@
 		      </div>
 
             <div class="link-box">
-               <a href="http://rozesh.com.np" class="button">Live Demo</a>
+               <a href="http://rozesh.com.np" target="_blank" class="button">Live Demo</a>
 		         <a class="popup-modal-dismiss button btn-close">Close</a>
             </div>
 
@@ -501,49 +501,52 @@
       <div class="row section-head">
           <div class="twelve columns">
               <h1 class="section-title wow fadeInDown">Get In Touch</h1>
-              <p class="lead">Leave, a Message. Will get back to you as soon as possible.</p>
+<?php require"mail.php";?>
+              <p class="lead"> Enter Message</p>
+            <p class="lead"><?php echo '<div style="color:red;">'.$finalmsg."</div>"; ?></p>
           </div>
       </div> <!-- Section head --> 
 
+
+
       <div class="row">
           <div class="five columns">
-             <div class="form-container wow fadeIn">
+             <div class="form-container wow fadeIn" >
                <!-- form -->
 
-               <form action="mail.php" method="post" id="contactForm" name="contactForm">
+
+               <form action="" method="post" id="contactForm" name="contactForm">
       				  	<fieldset>
 
+
                         <div>
-      						   <input type="text" placeholder="Name" value="" size="35" id="contactName" name="name">
+<?php echo '<div style="color:red;">'.$errorname."</div>"; ?>
+      						   <input type="text" placeholder="Name" value="" size="35" id="contactName" name="name" >
                         </div>
 
                         <div>
-      						   <input type="text" placeholder="Email" value="" size="35" id="contactEmail" name="email">
+                        <?php echo '<div style="color:red;">'.$erroremail."</div>"; ?>
+      						   <input type="text" placeholder="Email" value="" size="35" id="contactEmail" name="email" >
                         </div>
 
                         <div>
-      						   <input type="text" placeholder="Subject" value="" size="35" id="contactSubject" name="subject">
+                        <?php echo '<div style="color:red;">'.$errorsub."</div>"; ?>
+      						   <input type="text" placeholder="Subject" value="" size="35" id="contactSubject" name="subject" >
                         </div>
 
                         <div>
-                           <textarea cols="5" rows="5" placeholder="Message" id="contactMessage" name="message"></textarea>
+                        <?php echo '<div style="color:red;">'.$errormsg."</div>"; ?>
+                           <textarea cols="5" rows="5" placeholder="Message" id="contactMessage" name="message" ></textarea>
                         </div>
 
                         <div>
                          <!-- contact-warning -->
-                         <div id="message-warning"> Error boy</div>
-                           <button class="submit">Submit</button>
-                           <span id="image-loader">
-                              <img alt="" src="assets/images/loader.gif">
-                           </span>
-                        </div>
+                           <input type ="submit" name="submitmyform" value="Submit">
+                       </div>
 
       					 </fieldset>
 				        </form> <!-- Form End -->
                          <!-- contact-success -->
-                         <div id="message-success">
-                                <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-                         </div>
             </div>  <!-- Form Container End -->
 
           </div>
@@ -577,11 +580,11 @@
 
          <ul class="social-links">
        
-               <li><a href="https://www.facebook.com/Roxzz"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="https://twitter.com/Roxz12"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="https://plus.google.com/u/0/111485116006919363712/posts"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="https://np.linkedin.com/pub/rojesh-shrestha/a8/807/6a9/en"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://github.com/rozesh"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://www.facebook.com/Roxzz" target="_blank"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://twitter.com/Roxz12" target="_blank"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://plus.google.com/u/0/111485116006919363712/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="https://np.linkedin.com/pub/rojesh-shrestha/a8/807/6a9/en" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/rozesh"><i class="fa fa-github" target="_blank"></i></a></li>
             </ul>
 
 <!-- social Icons -->
