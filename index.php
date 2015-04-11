@@ -20,11 +20,9 @@
 	<!-- CSS
     ================================================== -->
    <link rel="stylesheet" href="assets/css/default.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<!-- <link rel="stylesheet" href="assets/css/style_v1.css"> -->
-<!-- <link rel="stylesheet" href="assets/css/style_v2.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
    <link rel="stylesheet" href="assets/css/responsive.css">
-   <link rel="stylesheet" href="assets/css/animate.css">
+      <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
    <link rel="stylesheet" href="assets/css/magnific-popup.css">
    <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.css">
@@ -111,7 +109,7 @@
          <div class="six columns bio-left"> 
          <div class="pp-container">
 
-            <img class="profile-pic wow zoomIn"  src="assets/images/avatar.jpg" alt="" />
+            <img class="profile-pic wow zoomIn"  src="assets/images/avatar.jpg" alt="rojesh" />
               <h2>Rojesh Shrestha</h2>
               <h3>Web Developer/ Programmer</h3>              
             </div> <!-- Profile Picture -->
@@ -122,7 +120,7 @@
           <div class="arrow-left"></div>
 
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sequi voluptatibus adipisci, minima expedita incidunt officia sunt, assumenda dolores neque. Distinctio eius velit necessitatibus illo qui molestias numquam aliquid minima!
+I am a freelance web designer and programmer from kathmandu, who is currently on his final year of completing his bachelor degree.
             </p>
 
           <div class="row">            
@@ -148,7 +146,7 @@
     <h1 class="section-title wow fadeInDown">Resume</h1>
       <!-- Education
       =============================================== -->
-      <div class="row education">
+      <div class>
 
          <div class="three columns header-col">
             <h2><span>Education</span></h2>
@@ -326,11 +324,28 @@
             <!-- portfolio-wrapper -->
             <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf wow fadeIn">
 
+                           <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img alt="" src="assets/images/blog.JPG">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                          <h5>Portfolio Title</h5>
+                              <p>Webdesign</p>
+                       </div>
+                        </div>
+                        <div class="link-icon"><i class="fa fa-plus fa-2x"></i></div>
+                     </a>
+
+                  </div>
+              </div> <!-- item end -->
+
 
                <div class="columns portfolio-item">
                   <div class="item-wrap">
 
-                     <a href="#modal-01" title="">
+                     <a href="#modal-02" title="">
                         <img alt="" src="assets/images/blogger.JPG">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
@@ -347,7 +362,7 @@
 <div class="columns portfolio-item">
                   <div class="item-wrap">
 
-                     <a href="#modal-02" title="">
+                     <a href="#modal-03" title="">
                         <img alt="" src="assets/images/rtech.PNG">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
@@ -364,7 +379,7 @@
 <div class="columns portfolio-item">
                   <div class="item-wrap">
 
-                     <a href="#modal-03" title="">
+                     <a href="#modal-04" title="">
                         <img alt="" src="assets/images/petstore.jpg">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
@@ -389,8 +404,25 @@
 
          <!-- Modal Popup
 	      =============================================== -->
+   <div id="modal-01" class="popup-modal mfp-hide">
 
-         <div id="modal-01" class="popup-modal mfp-hide">
+          <img class="scale-with-grid" src="assets/images/blog.JPG" alt="" />
+
+          <div class="description-box">
+            <h4>Title</h4>
+            <h2>Tech Blog</h2>
+            <p>This is blog related to the technology advacement around the world. This was done on for the college project.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Blog, Website</span
+          </div>
+
+            <div class="link-box">
+               <a href="http://blog.rozesh.com.np" target="_blank" class="button">Live Demo</a>
+             <a class="popup-modal-dismiss button btn-close">Close</a>
+            </div>
+
+        </div><!-- modal-01 End -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
 
 		      <img class="scale-with-grid" src="assets/images/blogger.JPG" alt="" />
 
@@ -408,7 +440,7 @@
 
 	      </div><!-- modal-01 End -->
 
-         <div id="modal-02" class="popup-modal mfp-hide">
+         <div id="modal-03" class="popup-modal mfp-hide">
 
 		      <img class="scale-with-grid" src="assets/images/rtech.PNG" alt="" />
 
@@ -426,7 +458,7 @@
 
 	      </div><!-- modal-02 End -->
 
-         <div id="modal-03" class="popup-modal mfp-hide">
+         <div id="modal-04" class="popup-modal mfp-hide">
 
 		      <img class="scale-with-grid" src="assets/images/petstore.jpg" alt="" />
 
@@ -438,7 +470,7 @@
 		      </div>
 
             <div class="link-box">
-               <a href="#" class="button btn-close">Ongoing Development</a>
+               <h1>Ongoing Development</h1>
 		         <a class="popup-modal-dismiss button btn-close">Close</a>
             </div>
 
@@ -531,7 +563,7 @@
 
                         <div>
                         <?php echo '<div style="color:red;">'.$errorsub."</div>"; ?>
-      						   <input type="text" placeholder="Subject" value="" size="35" id="contactSubject" name="subject" >
+      						   <input type="text" placeholder="Subject" value="" size="70" id="contactSubject" name="subject" >
                         </div>
 
                         <div>
