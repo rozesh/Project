@@ -1,26 +1,3 @@
-/*
-====================================================
-*   Intima Layout Stylesheet
-====================================================
-
-   TOC:
-   1. General Styles
-   2. Preloader Styles
-   3. Header Styles
-   4. About Section
-   5. Resume Section
-   6. Portfolio Section
-   7. Call To Action Section
-   8. Testimonials Section
-   9. Contact Section
-   10. Footer
-
-===================================================================== */
-
-
-/* ------------------------------------------------------------------ */
-/* 1. General Styles
-/* ------------------------------------------------------------------ */
 
 body { background: #0f0f0f; overflow-y: hidden; }
 
@@ -56,9 +33,6 @@ body { background: #0f0f0f; overflow-y: hidden; }
   font-family: "FontAwesome";
 }
 
-/* ------------------------------------------------------------------ */
-/* 2. Preloader CSS */ 
-/* ------------------------------------------------------------------ */
 
 #preloader{
   position:fixed;
@@ -118,10 +92,6 @@ body { background: #0f0f0f; overflow-y: hidden; }
     transform: rotate(140deg);
   }
 }
-
-/* ------------------------------------------------------------------ */
-/* 3. Header Styles
-/* ------------------------------------------------------------------ */
 
 header {
    position: relative;
@@ -356,7 +326,7 @@ ul#nav li a:hover {
 /* ------------------------------------------------------------------ */
 
 #about {
-  background: url(../images/2.jpg) no-repeat fixed center center / cover;        
+ background: #fff;
   overflow: hidden;
 }
 
@@ -883,7 +853,7 @@ ul#nav li a:hover {
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-   background: url(../images/3.jpg) no-repeat fixed center center / cover;
+   background: url(../images/) no-repeat fixed center center / cover;
    padding-top: 90px;
    padding-bottom: 60px;
 }

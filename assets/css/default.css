@@ -1,38 +1,8 @@
-/*
-=====================================================================
-*   Intima Stylesheet
-=====================================================================
 
-TOC:
-a. Webfonts and Icon fonts
-b. Reset
-c. Default Styles
-   1. Basic
-   2. Typography
-   3. Links
-   4. Images
-   5. Buttons
-   6. Forms
-d. Grid
-e. Others
-   1. Clearing
-   2. Misc
-
-=====================================================================  */
-
-/* ------------------------------------------------------------------ */
-/* a. Webfonts and Icon fonts
- ------------------------------------------------------------------ */
 
 @import url("http://fonts.googleapis.com/css?family=Raleway:400,700,900");
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800");
 
-/* ------------------------------------------------------------------
-/* b. Reset
-      Adapted from:
-      Normalize.css - https://github.com/necolas/normalize.css/
-      HTML5 Doctor Reset - html5doctor.com/html-5-reset-stylesheet/
-/* ------------------------------------------------------------------ */
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -118,15 +88,6 @@ table {
 }
 
 
-/* ------------------------------------------------------------------ */
-/* c. Default and Basic Styles
-      Adapted from:
-      Skeleton CSS Framework - http://www.getskeleton.com/
-      Typeplate Typographic Starter Kit - http://typeplate.com/
-/* ------------------------------------------------------------------ */
-
-/*  1. Basic  ------------------------------------------------------- */
-
 *,
 *:before,
 *:after {
@@ -152,9 +113,6 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
-/*  2. Typography
-       Vertical rhythm with leading derived from 6
---------------------------------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
    color: #313131;
